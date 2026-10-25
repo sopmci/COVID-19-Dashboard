@@ -52,10 +52,3 @@ Countries that report zero cases in at least 95% of weeks (for example, cruise s
 On the map, Puerto Rico is drawn larger and moved next to the mainland so it is easy to see.
 The state and county outlines are simplified, so coastlines look a little blocky.
 A few places are reported in combined units in the source data (for example, Utah health districts), so they show as gray.
-Built with
-
-Streamlit · pandas · Plotly · Folium · streamlit-folium
-
-Author
-
-Your name here
