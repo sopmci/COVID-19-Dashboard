@@ -261,7 +261,7 @@ with us_tab:
                          'properties': {'label': label, 'value_text': value_text, 'color': color}})
  
     # tiles = None means no background map
-    m = folium.Map(location = [39, -98], zoom_start = 3, tiles = None)
+    m = folium.Map(location = [39, -98], zoom_start = 3.5, tiles = None)
     m.get_root().html.add_child(folium.Element("<style>.leaflet-container {background: #f4f4f4;}</style>"))
     folium.GeoJson(
         {'type': 'FeatureCollection', 'features': features},
