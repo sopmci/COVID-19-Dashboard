@@ -179,8 +179,9 @@ with global_tab:
                         title = choose_value + " COVID-19 " + ("Cases" if choose_statistic == "Confirmed Cases" else "Mortality"))
         c_fig.update_layout(hovermode = 'x unified')
         st.plotly_chart(c_fig)
-
-
+        if choose_value == 'Cumulative':
+            st.caption("Lines show the running total at each date. The date range only controls which dates are displayed. "
+                       "For " + ("cases" if choose_statistic == "Confirmed Cases" else "deaths") + " during the range, use Weekly.")
 # =====================================================================
 # Part 2: US TAB
 # =====================================================================
