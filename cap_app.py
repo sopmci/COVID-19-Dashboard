@@ -322,6 +322,7 @@ with us_tab:
  
     st_folium(m, height = 550, use_container_width = True, returned_objects = [], key = "map_" + map_level)
     st.caption("Puerto Rico is shown enlarged and moved next to the mainland so it is easy to see. "
-               "Gray = no data (a few places are reported in combined units, like Utah health districts and Dukes & Nantucket). "
-               "Negative weekly corrections are set to 0.")
+               "Gray = no data (a few places are reported in combined units, like Utah health districts and Dukes & Nantucket).")
+    if map_value == 'Cumulative':
+     st.caption("Cumulative map shows the total as of the end date. The start date is not used. For activity within the range, use Weekly average.")
  
